@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+/* Feature Section */
+.feature-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.feature-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Multi-Color Header Styles */
+.feature-header h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 48px; /* Big text */
+  font-weight: 900; /* Extra bold */
+  background: linear-gradient(90deg, #ff5722, #1a73e8, #4caf50, #ff9800); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Optional: Makes text uppercase */
+}
+
+/* Subheading styles */
+.feature-header h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* General Text Styling */
+.feature-description p {
+  font-size: 18px;
+  color: #555;
+  margin: 15px 0;
+}
+
+/* Feature Image Grid */
+.feature-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.feature-image {
+  width: 575.2px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Image Caption */
+.image-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .feature-header h2 {
+    font-size: 36px;
+  }
+
+  .feature-description p {
+    font-size: 16px; /* Adjusted for mobile */
+    margin: 10px 0;
+  }
+
+  .feature-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-image {
+    width: 100%;  /* Make images responsive */
+    height: auto;
+    max-width: 600px; /* Limit the width on small screens */
+  }
+
+  .image-item p {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+  .feature-header h2 {
+    font-size: 28px;
+  }
+
+  .feature-description p {
+    font-size: 14px; /* Further reduce text size */
+  }
+
+  .image-item p {
+    font-size: 14px; /* Further reduce text size */
+  }
+}

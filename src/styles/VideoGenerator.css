@@ -1,0 +1,153 @@
+/* General container for the main content */
+.v-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Form container for the video URL input */
+.v-form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+}
+
+/* Main heading styles */
+.v-main-heading {
+  font-size: 36px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0; /* Remove bottom margin to keep spacing tight */
+}
+
+/* Gradient text for main heading */
+.v-heading-gradient {
+  background: linear-gradient(to right, #6a5acd, #48c6ef);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Subheading styles */
+.v-subheading {
+  font-size: 20px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Form input and button styling */
+.v-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px; /* Space between input and button */
+}
+
+/* URL input styling */
+.v-input-url {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+/* Focus state for URL input */
+.v-input-url:focus {
+  border-color: #48c6ef;
+}
+
+/* Submit button styling */
+.v-submit-button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #48c6ef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+/* Hover state for submit button */
+.v-submit-button:hover {
+  background-color: #6a5acd;
+}
+
+/* Active state for submit button */
+.v-submit-button:active {
+  background-color: #4a87b5;
+}
+
+/* Loading spinner styles */
+.v-loading-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Spinner animation */
+.v-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #48c6ef;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Loading text next to the spinner */
+.v-loading-text {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* Sample video container styles */
+.v-sample-videos-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sample video styles */
+.v-sample-video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+  }
+  
+/* Footer Section */
+.footer-section {
+    background: linear-gradient(135deg, #ff5722, #ff8a00); /* Gradient background */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on top */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Ensure content is above any background */
+}
+
+/* Logo */
+.footer-logo h2 {
+    font-size: 32px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Gradient for logo text */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo h2:hover {
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff8a00;
+    transform: translateY(-3px); /* Hover effect with slight lift */
+}
+
+/* Footer Contact Info */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-contact h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #ff8a00;
+}
+
+/* Footer Subscribe Section */
+.footer-subscribe {
+    margin: 20px 0;
+}
+
+.footer-subscribe h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+    color: #333;
+}
+
+.footer-subscribe button {
+    background-color: #ff8a00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+    background-color: #ff5722;
+}
+
+/* Footer Social Media */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #ff8a00;
+    transform: scale(1.2); /* Slight enlargement on hover */
+    box-shadow: 0 0 10px rgba(255, 138, 0, 0.6); /* Glowing effect */
+}
+
+/* Copyright */
+.footer-copyright p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #ff8a00;
+    transform: translateY(-5px); /* Hover effect with slight lift */
+}
+
+/* Social Media Icons */
+.social-icon {
+    font-size: 32px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff8a00; /* Change color on hover */
+    transform: scale(1.2); /* Slight enlargement on hover */
+    box-shadow: 0 0 10px rgba(255, 138, 0, 0.6); /* Glowing effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-subscribe input,
+    .footer-subscribe button {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .footer-socials {
+        margin-top: 20px;
+    }
+}
